@@ -1,0 +1,12 @@
+//
+   Created by qianqing on 16-1-18.
+extends ./layouts/default
+
+block content
+   .page-group
+      #page-index.page.page-current
+         include ./component/header-search
+         include ./component/footer
+
+//block append scripts
+    script(type='text/javascript', src='javascripts/lib/requirejs.min.js' data-main='js/controller/index-ctrl')
