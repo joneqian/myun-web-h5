@@ -1,0 +1,13 @@
+extends ./layouts/default
+
+block content
+  .page-group
+    #page-index.page.page-current
+      include ./component/header
+      include ./component/footer
+      include ./component/home
+
+    include ./component/about
+
+//block append scripts
+    script(type='text/javascript', src='javascripts/lib/requirejs.min.js' data-main='js/controller/index-ctrl')
