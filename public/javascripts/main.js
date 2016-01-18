@@ -4,7 +4,7 @@
  * @description
  */
 require.config({
-	baseUrl: './javascript',
+	baseUrl: './javascripts',
 	paths: {
 		'vue': './lib/vue.min'
 	},
