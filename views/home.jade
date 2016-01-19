@@ -2,9 +2,6 @@
    Created by qianqing on 16-1-18.
 extends ./layouts/default
 
-block append head
-   link(rel='stylesheet', href='//g.alicdn.com/msui/sm/0.6.1/css/sm-extend.min.css')
-
 block content
    .page-group
       #page-home.page.page-current
@@ -12,7 +9,7 @@ block content
 
          .content
             .swiper-container(data-space-between='10')
-               .swiper-wrapper(data-autoplay='3000')
+               .swiper-wrapper.ui-imgauto(data-autoplay='3000')
                   .swiper-slide
                      img(src='/images/slide/slide-1.jpg', alt='')
                   .swiper-slide
@@ -26,5 +23,4 @@ block content
          include ./component/footer
 
 block append scripts
-   script(type='text/javascript', src='//g.alicdn.com/msui/sm/0.6.1/js/sm-extend.min.js', charset='utf-8')
    script(type='text/javascript', src='javascripts/lib/requirejs.min.js' data-main='javascripts/controller/home-ctrl')
