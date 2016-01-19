@@ -8,8 +8,8 @@ block content
          include ./component/header-search
 
          .content
-            .swiper-container(data-space-between='10')
-               .swiper-wrapper.ui-imgauto(data-autoplay='3000')
+            .swiper-container(data-space-between='10', data-autoplay='3000')
+               .swiper-wrapper.ui-imgauto
                   .swiper-slide
                      img(src='/images/slide/slide-1.jpg', alt='')
                   .swiper-slide
@@ -17,7 +17,7 @@ block content
                   .swiper-slide
                      img(src='/images/slide/slide-3.jpg', alt='')
                   .swiper-slide
-                     img(src='/images/slide/slide-3.jpg', alt='')
+                     img(src='/images/slide/slide-4.jpg', alt='')
                .swiper-pagination
 
          include ./component/footer
