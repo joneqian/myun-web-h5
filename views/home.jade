@@ -7,6 +7,7 @@ block content
       #page-home.page.page-current
          include ./component/header-search
          include ./component/footer
+
          .content.native-scroll
             .swiper-container.swiper-container-horizontal(data-space-between='10', data-autoplay='3000')
                .swiper-wrapper.my-img-auto
@@ -36,6 +37,7 @@ block content
                .card-content.my-img-auto.img-box
                   img(src='/images/slide/slide-4.jpg')
 
+      include ./component/my-panel
 
 block append scripts
    script(type='text/javascript', src='javascripts/lib/requirejs.min.js' data-main='javascripts/controller/home-ctrl')

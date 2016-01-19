@@ -38,13 +38,13 @@ body {
 .img-box {
     width: 100%;
     position: relative;
-    background-color: red;
+    background-color: #c2ccd1;
     overflow: hidden;  //需要触发BFC消除margin折叠的问题
 }
 .img-box:after {
     content: '';
     display: block;
-    margin-top: 48%; //margin 百分比相对父元素宽度计算
+    margin-top: 48%; //margin百分比相对父元素宽度计算
 }
 
 .img-box img {
