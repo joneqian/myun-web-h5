@@ -6,7 +6,6 @@
 require(['../main'],
 	function (main) {
 		'use strict';
-		//$.init();
 		$(function() {
 			$(".swiper-container").swiper({
 				spaceBetween: 30,

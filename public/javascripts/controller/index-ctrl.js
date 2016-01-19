@@ -6,5 +6,6 @@
 require(['../main'],
 	function (main) {
 		'use strict';
+		$.init();
 	}
 );
