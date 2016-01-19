@@ -1,16 +1,11 @@
-body{
-    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;
-    color:#333;
+body {
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
 .swiper-container {
     padding-bottom: 0;
 }
-
-.card {
-    margin: .5rem 0 0;
-}
-
 .card-header {
     min-height: 1rem;
     padding: .2rem;
@@ -26,13 +21,34 @@ body{
     margin: .2rem .2rem 0 0;
 }
 
-.card-link  {
+.card-link {
     font-size: 11px;
     color: #686868;
 }
 
-.card-link  .link-text{
+.card-link .link-text {
     margin: .1rem;
 }
 
-.my-img-auto img{width:100%!important;height:auto!important;}
+.my-img-auto img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.img-box {
+    width: 100%;
+    position: relative;
+    background-color: red;
+    overflow: hidden;  //需要触发BFC消除margin折叠的问题
+}
+.img-box:after {
+    content: '';
+    display: block;
+    margin-top: 48%; //margin 百分比相对父元素宽度计算
+}
+
+.img-box img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

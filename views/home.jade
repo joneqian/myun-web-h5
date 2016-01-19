@@ -6,17 +6,17 @@ block content
    .page-group
       #page-home.page.page-current
          include ./component/header-search
-
-         .content
+         include ./component/footer
+         .content.native-scroll
             .swiper-container.swiper-container-horizontal(data-space-between='10', data-autoplay='3000')
                .swiper-wrapper.my-img-auto
-                  .swiper-slide
+                  .swiper-slide.img-box
                      img(src='/images/slide/slide-1.jpg', alt='')
-                  .swiper-slide
+                  .swiper-slide.img-box
                      img(src='/images/slide/slide-2.jpg', alt='')
-                  .swiper-slide
+                  .swiper-slide.img-box
                      img(src='/images/slide/slide-3.jpg', alt='')
-                  .swiper-slide
+                  .swiper-slide.img-box
                      img(src='/images/slide/slide-4.jpg', alt='')
                .swiper-pagination
             .card
@@ -25,7 +25,7 @@ block content
                      .card-link.col-30
                         span.link-text 更多新品
                         span.icon.icon-right
-               .card-content.my-img-auto
+               .card-content.my-img-auto.img-box
                   img(src='/images/slide/slide-4.jpg')
             .card
                .card-header.no-border
@@ -33,10 +33,9 @@ block content
                   .card-link.col-30
                      span.link-text 更多秒杀
                      span.icon.icon-right
-               .card-content.my-img-auto
+               .card-content.my-img-auto.img-box
                   img(src='/images/slide/slide-4.jpg')
 
-         include ./component/footer
 
 block append scripts
    script(type='text/javascript', src='javascripts/lib/requirejs.min.js' data-main='javascripts/controller/home-ctrl')
