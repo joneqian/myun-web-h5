@@ -6,18 +6,18 @@ block content
     .page-group
         #page-my.page.page-current
             include ./component/footer
-            .content.native-scroll
+            .content
                 .list-block.media-list
                     ul
                         li
-                            a.item-link.item-content
-                                .item-media
-                                    img(src='/images/photo-my-user.gif', width='80px', height='80px')
-                                .item-inner
-                                    .item-title-row
-                                        .item-title 小王
-                                        .item-after 账户管理
-                                    .item-subtitle 会员
+                            .item-link.item-content.open-panel(data-panel='#account-panel')
+                               .item-media
+                                   img(src='/images/photo-my-user.gif', width='80px', height='80px')
+                               .item-inner
+                                   .item-title-row
+                                       .item-title 小王
+                                       .item-after 账户管理
+                                   .item-subtitle 会员
                 .list-block
                     ul
                         li
@@ -33,6 +33,7 @@ block content
                                 .item-inner
                                     .item-title 我的分享
 
+        include ./component/account-panel
 
 block append scripts
     script(type='text/javascript', src='../javascripts/lib/requirejs.min.js' data-main='../javascripts/controller/my-ctrl')

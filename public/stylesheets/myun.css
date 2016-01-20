@@ -70,3 +70,12 @@ body {
 #page-my .item-after {
     padding-top: 1.3rem;
 }
+
+.panel {
+    background: #c2ccd1;
+    color: #000000;
+}
+
+#account-panel .list-block {
+    margin: .2rem 0;
+}
