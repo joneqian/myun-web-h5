@@ -27,8 +27,14 @@ require(['Vue'],
 			data: {
 				products: [
 					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg' },
-					{ name: '奶粉', price: '￥30', img: '/images/product/1.jpg' },
-					{ name: '电池', price: '￥5', img: '/images/product/1.jpg' }
+					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg' },
+					{ name: '电池', price: '￥5', img: '/images/product/3.jpg' },
+					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg' },
+					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg' },
+					{ name: '电池', price: '￥5', img: '/images/product/3.jpg' },
+					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg' },
+					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg' },
+					{ name: '电池', price: '￥5', img: '/images/product/3.jpg' }
 				]
 			}
 		});
