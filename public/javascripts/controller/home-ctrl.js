@@ -14,6 +14,7 @@ require(['../main'],
 				autoplayDisableOnInteraction: false
 			});
 		});
+		$.init();
 
 	}
 );

@@ -1,0 +1,25 @@
+//
+   Created by qianqing on 16-1-18.
+extends ./layouts/users-default
+
+block content
+    .page-group
+        #page-my.page.page-current
+            include ./component/footer
+            .content.native-scroll
+               .content
+                  .list-block.media-list
+                     ul
+                        li
+                           a.item-link.item-content
+                              .item-media
+                                 img(src='/images/photo-my-user.gif')
+                              .item-inner
+                                 .item-title-row
+                                    .item-title 小王
+                                    .item-after $15
+                                 .item-subtitle 小李
+                                 .item-text 我的
+
+block append scripts
+    script(type='text/javascript', src='../javascripts/lib/requirejs.min.js' data-main='../javascripts/controller/my-ctrl')
