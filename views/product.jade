@@ -10,11 +10,11 @@ block content
          .content
             .list-block.media-list(v-cloak)
                ul
-                  li(v-for="product in products")
+                  li(v-for='product in products')
                      .item-content
                         .item-media
                            a(href='#')
-                              img(src='{{product.img}}')
+                              img(v-bind='{src:product.img}')
                         .item-inner
                            .item-title-row
                               .item-title {{product.name}}
