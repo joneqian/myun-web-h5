@@ -10,14 +10,17 @@ block content
                 .list-block.media-list
                     ul
                         li
-                            .item-link.item-content.open-panel(data-panel='#account-panel')
+                            .item-content.open-panel(data-panel='#account-panel')
                                .item-media
                                    img(src='/images/photo-my-user.gif', width='80px', height='80px')
                                .item-inner
                                    .item-title-row
                                        .item-title 小王
-                                       .item-after 账户管理
-                                   .item-subtitle 会员
+                                   .item-subtitle
+                                       .row
+                                           span.col-50 会员
+                                           .item-after.col-50 账户管理
+                                               span.icon.icon-right
                 .list-block
                     ul
                         li
