@@ -1,0 +1,24 @@
+//
+   Created by qianqing on 16-1-20.
+//
+extends ./layouts/product-default
+block content
+   .page-group
+      #page-product.page.page-current
+         include ./component/header-search
+         include ./component/footer
+         .content
+            .list-block.media-list
+               ul
+                  li
+                     .item-content
+                        .item-media
+                           img(src='/images/product/1.jpg')
+                        .item-inner
+                           .item-title-row
+                              .item-title 小王
+                           .item-subtitle
+                              span.price-text 价格
+                              p.buttons-row
+                                 a.button.button-fill.button-warning(href='#') 收藏
+                                 a.button.button-fill.button-success(href='#') 购买

@@ -3,6 +3,10 @@ body {
     color: #333;
 }
 
+a {
+    color: #333;
+}
+
 .swiper-container {
     padding-bottom: 0;
 }
@@ -78,4 +82,22 @@ body {
 
 #account-panel .list-block {
     margin: .2rem 0;
+}
+
+#page-product .list-block {
+    margin: 0;
+}
+
+.price-text {
+    color: #ff0000;
+}
+
+#page-product .buttons-row {
+    margin-top: 2rem;
+    width: 60%;
+}
+
+#page-product .buttons-row .button{
+    color: #ffffff;
+    border-color: #ffffff;
 }
