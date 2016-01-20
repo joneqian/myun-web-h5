@@ -7,19 +7,17 @@ block content
         #page-my.page.page-current
             include ./component/footer
             .content.native-scroll
-               .content
                   .list-block.media-list
                      ul
                         li
                            a.item-link.item-content
                               .item-media
-                                 img(src='/images/photo-my-user.gif')
+                                 img(src='/images/photo-my-user.gif', width='80px', height='80px')
                               .item-inner
                                  .item-title-row
                                     .item-title 小王
-                                    .item-after $15
-                                 .item-subtitle 小李
-                                 .item-text 我的
+                                    .item-after 账户管理
+                                 .item-subtitle 会员
 
 block append scripts
     script(type='text/javascript', src='../javascripts/lib/requirejs.min.js' data-main='../javascripts/controller/my-ctrl')

@@ -52,3 +52,21 @@ body {
     top: 0;
     width: 100%;
 }
+
+#page-my .media-list {
+    margin: 0;
+}
+
+#page-my .media-list ul{
+    background: #d8505c;
+    color: #ffffff;
+}
+
+#page-my .media-list .item-after{
+    background: #d8505c;
+    color: #ffffff;
+}
+
+#page-my .item-after {
+    padding-top: 1.3rem;
+}
