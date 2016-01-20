@@ -7,17 +7,32 @@ block content
         #page-my.page.page-current
             include ./component/footer
             .content.native-scroll
-                  .list-block.media-list
-                     ul
+                .list-block.media-list
+                    ul
                         li
-                           a.item-link.item-content
-                              .item-media
-                                 img(src='/images/photo-my-user.gif', width='80px', height='80px')
-                              .item-inner
-                                 .item-title-row
-                                    .item-title 小王
-                                    .item-after 账户管理
-                                 .item-subtitle 会员
+                            a.item-link.item-content
+                                .item-media
+                                    img(src='/images/photo-my-user.gif', width='80px', height='80px')
+                                .item-inner
+                                    .item-title-row
+                                        .item-title 小王
+                                        .item-after 账户管理
+                                    .item-subtitle 会员
+                .list-block
+                    ul
+                        li
+                            a.item-link.item-content(href='#')
+                                .item-media
+                                    img(src='/images/my-booking.png', width='30px', height='30px')
+                                .item-inner
+                                    .item-title 我的订单
+                        li
+                            a.item-link.item-content(href='#')
+                                .item-media
+                                    img(src='/images/my-share.png', width='30px', height='30px')
+                                .item-inner
+                                    .item-title 我的分享
+
 
 block append scripts
     script(type='text/javascript', src='../javascripts/lib/requirejs.min.js' data-main='../javascripts/controller/my-ctrl')
