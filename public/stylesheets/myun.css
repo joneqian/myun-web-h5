@@ -101,3 +101,23 @@ a {
     color: #ffffff;
     border-color: #ffffff;
 }
+
+#page-product .list-block .item-media:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #e7e7e7;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+[v-cloak] {
+    display: none;
+}

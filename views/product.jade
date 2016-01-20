@@ -8,17 +8,18 @@ block content
          include ./component/header-search
          include ./component/footer
          .content
-            .list-block.media-list
+            .list-block.media-list(v-cloak)
                ul
-                  li
+                  li(v-for="product in products")
                      .item-content
                         .item-media
-                           img(src='/images/product/1.jpg')
+                           a(href='#')
+                              img(src='{{product.img}}')
                         .item-inner
                            .item-title-row
-                              .item-title 小王
+                              .item-title {{product.name}}
                            .item-subtitle
-                              span.price-text 价格
+                              span.price-text {{product.price}}
                               p.buttons-row
                                  a.button.button-fill.button-warning(href='#') 收藏
                                  a.button.button-fill.button-success(href='#') 购买

@@ -6,11 +6,11 @@
 require.config({
 	baseUrl: './javascripts',
 	paths: {
-		'vue': './lib/vue.min'
+		'Vue': './lib/vue.min'
 	},
 	shim: {
-		'vue': {
-			exports: 'vue'
+		'Vue': {
+			exports: 'Vue'
 		}
 	}
 });

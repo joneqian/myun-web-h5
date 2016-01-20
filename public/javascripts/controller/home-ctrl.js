@@ -3,8 +3,20 @@
  * @create by 16-1-18
  * @description
  */
-require(['../main'],
-	function (main) {
+require.config({
+	baseUrl: './javascripts',
+	paths: {
+		'Vue': './lib/vue.min'
+	},
+	shim: {
+		'Vue': {
+			exports: 'Vue'
+		}
+	}
+});
+
+require(['Vue'],
+	function (Vue) {
 		'use strict';
 		$(function() {
 			$(".swiper-container").swiper({
