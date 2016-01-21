@@ -160,6 +160,23 @@ a {
     padding: 0;
 }
 
+#user-footer .tab-item {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+#user-footer .tab-item.add-cart{
+    background-color: #ffab20;
+    color: #ffffff;
+    font-size: .8rem;
+}
+
+#user-footer .tab-item.buy{
+    background-color: #ff1a29;
+    color: #ffffff;
+    font-size: .8rem;
+}
+
 
 [v-cloak] {
     display: none;
