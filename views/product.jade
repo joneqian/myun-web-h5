@@ -10,8 +10,7 @@ block content
          .content.infinite-scroll
             .list-block.media-list(v-cloak)
                ul.list-container
-                  li(v-for='product in products')
-                     .item-content
+                  li.item-content(v-for='product in products')
                         .item-media
                            a(href='#')
                               img(v-bind='{src:product.img}')
