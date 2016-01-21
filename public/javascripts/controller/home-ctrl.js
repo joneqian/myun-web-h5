@@ -26,5 +26,6 @@ require(['Vue'],
 				autoplayDisableOnInteraction: false
 			});
 		});
+		$.init();
 	}
 );
