@@ -22,15 +22,15 @@ require(['Vue'],
 			el: '#page-product',
 			data: {
 				products: [
-					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg' },
-					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg' },
-					{ name: '电池', price: '￥5', img: '/images/product/3.jpg' },
-					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg' },
-					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg' },
-					{ name: '电池', price: '￥5', img: '/images/product/3.jpg' },
-					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg' },
-					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg' },
-					{ name: '电池', price: '￥5', img: '/images/product/3.jpg' }
+					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg', href: '/product/detail'},
+					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg', href: '/product/detail'},
+					{ name: '电池', price: '￥5', img: '/images/product/3.jpg', href: '/product/detail'},
+					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg', href: '/product/detail'},
+					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg', href: '/product/detail'},
+					{ name: '电池', price: '￥5', img: '/images/product/3.jpg', href: '/product/detail'},
+					{ name: '牛奶', price: '￥120', img: '/images/product/1.jpg', href: '/product/detail'},
+					{ name: '奶粉', price: '￥30', img: '/images/product/2.jpg', href: '/product/detail'},
+					{ name: '电池', price: '￥5', img: '/images/product/3.jpg', href: '/product/detail'}
 				]
 			}
 		});
@@ -47,10 +47,11 @@ require(['Vue'],
 				// 生成新条目的HTML
 				var html = '';
 				for (var i = lastIndex + 1; i <= lastIndex + number; i++) {
-					html += '<li class="item-content"><div class="item-media"><a href="#"><img src="' + vm.products[i%3].img+
-							'"></a></div><div class="item-inner"><div class="item-title-row"><div class="item-title">' +
-							vm.products[i%3].name + '</div></div><div class="item-subtitle"><span class="price-text">' +
-							vm.products[i%3].price + '</span><p class="buttons-row"><a href="#" class="button button-fill button-warning">' +
+					html += '<li class="item-content"><div class="item-media"><a href="' + vm.products[i%3].href  +
+							'"><img src="' + vm.products[i%3].img + '"></a></div><div class="item-inner">' +
+							'<div class="item-title-row"><div class="item-title">' + vm.products[i%3].name + '</div>' +
+							'</div><div class="item-subtitle"><span class="price-text">' + vm.products[i%3].price +
+							'</span><p class="buttons-row"><a href="#" class="button button-fill button-warning">' +
 							'收藏</a>' +	'<a href="#" class="button button-fill button-success">购买</a></p></div></div></div></li>';
 				}
 				// 添加新条目

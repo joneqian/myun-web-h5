@@ -1,10 +1,10 @@
 /**
  * @author qianqing
- * @create by 16-1-18
+ * @create by 16-1-21
  * @description
  */
 require.config({
-	baseUrl: './javascripts',
+	baseUrl: '../javascripts',
 	paths: {
 		'Vue': './lib/vue.min'
 	},

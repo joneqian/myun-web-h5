@@ -1,0 +1,18 @@
+//
+   Created by qianqing on 16-1-21.
+extends ./layouts/product-default
+
+block content
+   .page-group
+      #page-product-details.page.page-current
+         .buttons-tab.fixed-tab.bar
+            a.button.button-link.pull-left.back
+               span.icon.icon-left
+            a.tab-link.active.button(href='#intro') 商品
+            a.tab-link.button(href='#detail') 详情
+            a.tab-link.button(href='#evaluate') 评价
+         .tabs
+            include ./component/intro-tab
+
+block append scripts
+   script(type='text/javascript', src='../javascripts/lib/requirejs.min.js' data-main='../javascripts/controller/product-details')

@@ -57,6 +57,24 @@ a {
     width: 100%;
 }
 
+.img-box-square {
+    width: 100%;
+    position: relative;
+    background-color: #c2ccd1;
+    overflow: hidden;  //需要触发BFC消除margin折叠的问题
+}
+.img-box-square:after {
+    content: '';
+    display: block;
+    margin-top: 100%; //margin百分比相对父元素宽度计算
+}
+
+.img-box-square img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 #page-my .media-list {
     margin: 0;
 }
@@ -116,6 +134,18 @@ a {
 
 #page-product .list-block .item-inner:after {
     height: 0;
+}
+
+.fixed-tab .back {
+    margin-left: 0;
+    margin-right: .2rem;
+    margin-top: .3rem;
+    text-align: left;
+    width: 50%;
+}
+
+#intro .content {
+    padding-top: 2.4rem;
 }
 
 [v-cloak] {

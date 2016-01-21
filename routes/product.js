@@ -15,4 +15,8 @@ router.get('/sale', function(req, res, next) {
 	res.render('product-sale-list', { title: '特卖' });
 });
 
+router.get('/detail', function(req, res, next) {
+	res.render('product-details', { title: '' });
+});
+
 module.exports = router;
