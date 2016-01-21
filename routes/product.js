@@ -8,11 +8,11 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/new', function(req, res, next) {
-	res.render('product-new', { title: '新品' });
+	res.render('product-new-list', { title: '新品' });
 });
 
 router.get('/sale', function(req, res, next) {
-	res.render('product-sale', { title: '特卖' });
+	res.render('product-sale-list', { title: '特卖' });
 });
 
 module.exports = router;
