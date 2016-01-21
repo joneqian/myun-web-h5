@@ -148,6 +148,19 @@ a {
     padding-top: 2.4rem;
 }
 
+.item-subtitle .list-block {
+    margin: 0;
+}
+
+.item-subtitle .list-block .list-container{
+    padding: 0;
+}
+
+.item-subtitle .list-block .list-container .item-content{
+    padding: 0;
+}
+
+
 [v-cloak] {
     display: none;
 }
