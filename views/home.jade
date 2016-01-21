@@ -30,13 +30,14 @@ block content
                   .card-content.my-img-auto.img-box
                      img(src='/images/slide/slide-4.jpg')
             .card
-               .card-header.no-border
-                  .card-title.col-70 秒杀
-                  .card-link.col-30
-                     span.link-text 更多秒杀
-                     span.icon.icon-right
-               .card-content.my-img-auto.img-box
-                  img(src='/images/slide/slide-4.jpg')
+               a.external(href='/product/sale')
+                  .card-header.no-border
+                     .card-title.col-70 秒杀
+                     .card-link.col-30
+                        span.link-text 更多秒杀
+                        span.icon.icon-right
+                  .card-content.my-img-auto.img-box
+                     img(src='/images/slide/slide-4.jpg')
 
 block append scripts
    script(type='text/javascript', src='javascripts/lib/requirejs.min.js' data-main='javascripts/controller/home-ctrl')
