@@ -7,9 +7,9 @@ block content
       #page-product.page.page-current
          include ./component/header-search
          include ./component/footer
-         .content
+         .content.infinite-scroll
             .list-block.media-list(v-cloak)
-               ul
+               ul.list-container
                   li(v-for='product in products')
                      .item-content
                         .item-media
@@ -23,3 +23,5 @@ block content
                               p.buttons-row
                                  a.button.button-fill.button-warning(href='#') 收藏
                                  a.button.button-fill.button-success(href='#') 购买
+            .infinite-scroll-preloader
+               .preloader
