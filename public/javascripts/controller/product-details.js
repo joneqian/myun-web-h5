@@ -26,6 +26,16 @@ require(['Vue'],
 			}
 		});
 
+		var myPhotoBrowserPopup = $.photoBrowser({
+			photos : [
+				'../images/slide/slide-5.jpg',
+				'../images/slide/slide-6.jpg',
+				'../images/slide/slide-7.jpg',
+			],
+			type: 'popup'
+		});
+
+
 		$(document).on("pageInit", "#page-product-details", function(e, id, page) {
 			$(page).on('click','.open-preloader-collect', function () {
 				$.showPreloader('已收藏')
@@ -72,6 +82,10 @@ require(['Vue'],
 				];
 				var groups = [buttons1, buttons2];
 				$.actions(groups);
+			});
+
+			$(page).on('click','.pb-popup',function () {
+				myPhotoBrowserPopup.open();
 			});
 		});
 

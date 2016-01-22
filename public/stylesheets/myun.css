@@ -144,7 +144,7 @@ a {
     width: 50%;
 }
 
-#intro .content {
+#intro,#detail .content {
     padding-top: 2.4rem;
 }
 
