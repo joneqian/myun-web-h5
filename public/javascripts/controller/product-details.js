@@ -21,6 +21,7 @@ require(['Vue'],
 		var vm = new Vue({
 			el: '#intro',
 			data: {
+				styleTitle: '选择款式/样式',
 				style: ''
 			}
 		});
@@ -51,12 +52,14 @@ require(['Vue'],
 						bold: true,
 						color: 'danger',
 						onClick: function() {
+							vm.styleTitle = '已选择：';
 							vm.style = '一箱';
 						}
 					},
 					{
 						text: '一袋',
 						onClick: function() {
+							vm.styleTitle = '已选择：';
 							vm.style = '一袋';
 						}
 					}
@@ -71,6 +74,7 @@ require(['Vue'],
 				$.actions(groups);
 			});
 		});
+
 		$(function() {
 			$(".swiper-container").swiper({
 				spaceBetween: 30,

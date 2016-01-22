@@ -12,7 +12,7 @@ block content
                ul.list-container
                   li.item-content(v-for='product in products')
                         .item-media
-                           a(v-bind='{href:product.href}')
+                           a.external(v-bind='{href:product.href}')
                               img(v-bind='{src:product.img}')
                         .item-inner
                            .item-title-row
