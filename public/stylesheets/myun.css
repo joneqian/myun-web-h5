@@ -160,19 +160,19 @@ a {
     padding: 0;
 }
 
-#user-footer .tab-item {
+#product-footer .tab-item {
     background-color: #0a0a0a;
     color: #ffffff;
     font-size: .4rem;
 }
 
-#user-footer .tab-item.add-cart{
+#product-footer .tab-item.add-cart{
     background-color: #ffab20;
     color: #ffffff;
     font-size: .8rem;
 }
 
-#user-footer .tab-item.buy{
+#product-footer .tab-item.buy{
     background-color: #ff1a29;
     color: #ffffff;
     font-size: .8rem;
@@ -182,6 +182,12 @@ a {
     font-size: .6rem;
     padding-left: .4rem;
     color: #5f646c;
+}
+
+.popup.popup-style {
+    top: auto;
+    bottom: 0;
+    height: 50%;
 }
 
 [v-cloak] {

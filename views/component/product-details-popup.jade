@@ -1,0 +1,35 @@
+//
+   Created by qianqing on 16-1-22.
+
+.popup.popup-style
+   header.bar.bar-nav
+      a.button.button-link.button-nav.pull-right.close-popup 关闭
+      h1.title 请选择款式
+   .content
+      .content-inner
+         .content-block
+            .list-block.media-list
+               ul
+                  li
+                     label.label-checkbox.item-content
+                        input(type="radio", name="my-radio")
+                        .item-media
+                           i.icon.icon-form-checkbox
+                        .item-inner
+                           .item-title-row
+                              .item-title 50包/箱
+                              .item-after 1kg
+                           .item-subtitle.price-text ￥55
+                  li
+                     label.label-checkbox.item-content
+                        input(type="radio", name="my-radio")
+                        .item-media
+                           i.icon.icon-form-checkbox
+                        .item-inner
+                           .item-title-row
+                              .item-title 10包/袋
+                              .item-after 500g
+                           .item-subtitle.price-text ￥25
+   #product-footer.bar.bar-tab.bar-footer
+      .tab-item.add-cart.open-preloader-cart 加入购物车
+      .tab-item.buy 立刻购买

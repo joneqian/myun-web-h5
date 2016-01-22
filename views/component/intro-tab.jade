@@ -2,7 +2,7 @@
    Created
    by qianqing on 16-1-21.
 #intro.tab.active
-   include ./user-footer
+   include ./product-footer
    .content
       .swiper-container.swiper-container-horizontal(data-space-between='10', data-autoplay='3000')
          .swiper-wrapper.my-img-auto
@@ -30,3 +30,10 @@
                   .item-inner
                      .item-title {{styleTitle}}
                         span.style-text {{style}}
+      .list-block.media-list(v-cloak)
+         ul.list-container
+            li
+               a.item-link.item-content.open-popup(data-popup='.popup-style')
+                  .item-inner
+                     .item-title 选择款式/样式(另外一种效果)
+                        span.style-text
