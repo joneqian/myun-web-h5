@@ -47,7 +47,7 @@ require(['Vue'],
 				// 生成新条目的HTML
 				var html = '';
 				for (var i = lastIndex + 1; i <= lastIndex + number; i++) {
-					html += '<li class="item-content"><div class="item-media"><a href="' + vm.products[i%3].href  +
+					html += '<li class="item-content"><div class="item-media"><a class ="external" href="' + vm.products[i%3].href  +
 							'"><img src="' + vm.products[i%3].img + '"></a></div><div class="item-inner">' +
 							'<div class="item-title-row"><div class="item-title">' + vm.products[i%3].name + '</div>' +
 							'</div><div class="item-subtitle"><span class="price-text">' + vm.products[i%3].price +
