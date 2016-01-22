@@ -18,6 +18,13 @@ require.config({
 require(['Vue'],
 	function (Vue) {
 		'use strict';
+		var vm = new Vue({
+			el: '#intro',
+			data: {
+				style: ''
+			}
+		});
+
 		$(document).on("pageInit", "#page-product-details", function(e, id, page) {
 			$(page).on('click','.open-preloader-collect', function () {
 				$.showPreloader('已收藏')
@@ -31,6 +38,37 @@ require(['Vue'],
 				setTimeout(function () {
 					$.hidePreloader();
 				}, 500);
+			});
+
+			$(page).on('click','.create-actions', function () {
+				var buttons1 = [
+					{
+						text: '请选择款式',
+						label: true
+					},
+					{
+						text: '一箱',
+						bold: true,
+						color: 'danger',
+						onClick: function() {
+							vm.style = '一箱';
+						}
+					},
+					{
+						text: '一袋',
+						onClick: function() {
+							vm.style = '一袋';
+						}
+					}
+				];
+				var buttons2 = [
+					{
+						text: '取消',
+						bg: 'danger'
+					}
+				];
+				var groups = [buttons1, buttons2];
+				$.actions(groups);
 			});
 		});
 		$(function() {

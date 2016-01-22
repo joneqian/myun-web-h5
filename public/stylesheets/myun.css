@@ -178,6 +178,11 @@ a {
     font-size: .8rem;
 }
 
+.style-text {
+    font-size: .6rem;
+    padding-left: .4rem;
+    color: #5f646c;
+}
 
 [v-cloak] {
     display: none;
