@@ -148,7 +148,7 @@ a {
     width: 20%;
 }
 
-#intro,#detail .content {
+.tab .content {
     padding-top: 2.4rem;
 }
 
@@ -192,6 +192,33 @@ a {
     top: auto;
     bottom: 0;
     height: 50%;
+}
+
+.book-list {
+    margin-top: .2rem;
+}
+
+.book-list .item-content{
+    padding-left: 0;
+}
+
+.book-list .item-content .item-inner{
+    padding-left: .75rem;
+}
+
+
+.book-date,.book-status {
+    font-size: .6rem;
+}
+
+.book-date {
+    color: #5f646c;
+}
+
+.book-detail {
+    margin-top: .8rem;
+    font-size: .8rem;
+    color: #5f646c;
 }
 
 [v-cloak] {
