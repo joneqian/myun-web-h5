@@ -5,11 +5,12 @@ extends ./layouts/book-default
 block content
    .page-group
       #page-book-manage.page.page-current
-         .buttons-tab.fixed-tab.bar
-            a.button.button-link.pull-left.back
-               span.icon.icon-left
-            a.tab-link.active.button(href='#book-list') 一个月内订单
-            a.tab-link.button(href='#book-list-earlier') 一个月前订单
-         .tabs
-            include ./component/book-tab
-            include ./component/book-tab-earlier
+         .content
+            .buttons-tab.fixed-tab.buttons-fixed
+               a.button.button-link.pull-left.back
+                  span.icon.icon-left
+               a.tab-link.active.button(href='#book-list') 一个月内订单
+               a.tab-link.button(href='#book-list-earlier') 一个月前订单
+            .tabs
+               include ./component/book-tab
+               include ./component/book-tab-earlier

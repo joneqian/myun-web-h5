@@ -136,20 +136,18 @@ a {
     height: 0;
 }
 
-.fixed-tab.bar {
+/*.fixed-tab.bar {
     margin-right: 0;
-}
+}*/
 
 .fixed-tab .back {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: .3rem;
+    margin: 0;
     text-align: left;
     width: 20%;
 }
 
 .tab .content {
-    padding-top: 2.4rem;
+    padding-top: 2.2rem;
 }
 
 .item-subtitle .list-block {
@@ -195,7 +193,8 @@ a {
 }
 
 .book-list {
-    margin-top: .2rem;
+    margin-top: 0;
+    margin-bottom: .2rem;
 }
 
 .book-list .item-content{
@@ -220,6 +219,7 @@ a {
     font-size: .8rem;
     color: #5f646c;
 }
+
 
 [v-cloak] {
     display: none;
