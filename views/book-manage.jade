@@ -14,3 +14,7 @@ block content
             .tabs
                include ./component/book-tab
                include ./component/book-tab-earlier
+      include ./component/page-book-detail
+
+block append scripts
+   script(type='text/javascript', src='../javascripts/lib/requirejs.min.js' data-main='../javascripts/controller/book-ctrl')

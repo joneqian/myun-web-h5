@@ -11,4 +11,8 @@ router.get('/', function(req, res, next) {
 	res.render('book-manage', { title: '我的订单' });
 });
 
+router.get('/detail', function(req, res, next) {
+	res.render('book-detail', { title: '订单详情' });
+});
+
 module.exports = router;

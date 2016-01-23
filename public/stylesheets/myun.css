@@ -136,10 +136,6 @@ a {
     height: 0;
 }
 
-/*.fixed-tab.bar {
-    margin-right: 0;
-}*/
-
 .fixed-tab .back {
     margin: 0;
     text-align: left;
@@ -205,19 +201,19 @@ a {
     padding-left: .75rem;
 }
 
-
-.book-date,.book-status {
+.book-text {
     font-size: .6rem;
-}
-
-.book-date {
     color: #5f646c;
 }
 
-.book-detail {
+.book-link {
     margin-top: .8rem;
     font-size: .8rem;
     color: #5f646c;
+}
+
+.down-fixed-tab {
+    padding-top: 2.2rem;
 }
 
 
